@@ -282,15 +282,14 @@ GtkComboBox .button {
  ************/
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focus {
-    border-width: 1px;
+    border-width: 0px;
     border-style: solid;
     border-color: shade(@theme_selected_bg_color, 0.9);
     border-radius: 0;
-    box-shadow: 0 -1 @theme_selected_bg_color inset;
     background-image: transparent;
     background-color: transparent;
 
-    color: @theme_selected_fg_color;
+    color: @theme_selected_bg_color;
 }
 
 .view.rubberband,
@@ -769,16 +768,9 @@ GtkViewport.frame {
 	border-style: solid;
 	border-color: shade(@toolbar_bg_color, 0.90);
 
-	background-color: @toolbar_fg_color;
-    color: @toolbar_bg_color;
+	background-color: @toolbar_bg_color;
 
 	padding: 6px 6px 5px 6px;
-}
-
-
-.header-bar .button,
-.header-bar.button {
-    background-color: #ff0000;
 }
 
 .header-bar .button.text-button {
@@ -849,7 +841,7 @@ GtkViewport.frame {
     padding: 11px 11px;
     border-style: none;
     background: none;
-    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.1);
+    color: @toolbar_fg_color;
     icon-shadow: none;
 }
 
@@ -884,13 +876,13 @@ GtkViewport.frame {
 
 .titlebar .titlebutton:backdrop {
     background-image: none;
-    color: @toolbar_fg_color;
+    color: @toolbar_dark_text;
     icon-shadow: none;
 }
 
 .titlebar .button {
     background-color: @theme_dark_color; /*makes it practically transparent*/
-    color: @toolbar_dark_text;
+    color: @theme_dark_text;
 }
 
 .titlebar .button:hover,
@@ -906,7 +898,7 @@ GtkViewport.frame {
 
 
 .titlebar .separator {
-    border-color: @theme_dark_color;
+    border-color: shade(@theme_dark_color, 0.87);
 }
 
 .window-frame {
@@ -918,7 +910,7 @@ GtkViewport.frame {
 
     this is used for the resize cursor area */
 
-    box-shadow: 0 2px 8px 3px @theme_dark_color;
+    box-shadow: 0 2px 8px 3px alpha(@dark_shadow, 0.5);
 
     margin: 10px;
 }
@@ -955,4 +947,3 @@ EggListBox:selected {
 .list-row:selected {
 	color: @theme_selected_bg_color;
 }
-color:@theme_selected_bg_colorcolor:@theme_selected_bg_color
