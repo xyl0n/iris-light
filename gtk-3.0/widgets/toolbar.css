@@ -107,15 +107,15 @@
 
 .primary-toolbar .button:insensitive,
 .toolbar .button:insensitive {
-    border-color: shade(@toolbar_bg_color, 0.85);
-    background-color: shade(@toolbar_bg_color, 0.9);
+    border-color: shade(@toolbar_bg_color, 1.0);
+    background-color: shade(@toolbar_bg_color, 1.0);
     background-image: none;
 }
 
 .primary-toolbar .button:active:insensitive,
 .toolbar .button:active:insensitive {
-    border-color: shade(@toolbar_bg_color, 0.75);
-    background-color: shade(@toolbar_bg_color, 0.80);
+    border-color: shade(@toolbar_bg_color, 1.0);
+    background-color: shade(@toolbar_bg_color, 1.0);
     background-image: none;
 }
 

@@ -9,6 +9,21 @@
     color: @theme_fg_color;
 }
 
+.sidebar:hover,
+.sidebar.view:hover,
+.sidebar .view:hover {
+    color: @theme_selected_bg_color;
+}
+
+.sidebar .image:selected {
+    color: @theme_fg_color;
+}
+
+.sidebar .image:selected:focus,
+.sidebar .image:selected:hover {
+    color: @theme_selected_bg_color;
+}
+
 .sidebar .frame {
     border-width: 0;
 }
