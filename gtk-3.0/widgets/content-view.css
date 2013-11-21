@@ -18,6 +18,7 @@
 .content-view * {
     background-color: transparent;
     background-image: none;
+    color: @theme_fg_color;
 }
 
 .content-view .entry {

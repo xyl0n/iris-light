@@ -36,7 +36,7 @@
 }
 
 .toolbar .button {
-    padding: 4px;
+    padding: 4px 4px;
     border-radius: 0px;
     icon-shadow: none;
     color: @toolbar_fg_color;
@@ -101,7 +101,7 @@
 .toolbar .button:active:focus,
 .toolbar .button:active:hover:focus {
     transition: 500ms linear;
-    border-color: shade(@toolbar_bg_color, 0.95);
+    border-color: shade(@toolbar_bg_color, 0.85);
     color: shade(@toolbar_fg_color, 0.7);
 }
 
@@ -120,8 +120,8 @@
 }
 
 .primary-toolbar .entry {
-    border-style: none;
-    border-color: @toolbar_bg_color;
+    border-style: solid;
+    border-color: shade(@toolbar_bg_color, 0.85);
     box-shadow: -1px -1px 1px shade(@theme_bg_color, 0.95) inset,
                 1px 1px 1px shade(@theme_bg_color, 0.95) inset;
 }

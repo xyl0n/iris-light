@@ -1,7 +1,7 @@
 /* Default color scheme */
-@define-color bg_color #333333;
-@define-color fg_color #f0f0f0;
-@define-color base_color #333333; /*Same as bg color for consistency in asthetics*/
+@define-color bg_color #222;
+@define-color fg_color #fafafa;
+@define-color base_color #222;
 @define-color text_color #f1f1f1;
 @define-color selected_bg_color #df253f;
 @define-color selected_fg_color #ffffff;
@@ -37,11 +37,11 @@
 
 /* widget colors */
 @define-color button_bg_color #464646;
-@define-color menubar_bg_color shade(@button_bg_color, 1.15);
+@define-color menubar_bg_color @theme_bg_color;
 @define-color menubar_fg_color @theme_text_color;
-@define-color toolbar_bg_color shade(@button_bg_color, 1.15);
+@define-color toolbar_bg_color @theme_bg_color;
 @define-color toolbar_fg_color @theme_text_color;
-@define-color menu_bg_color shade(@button_bg_color, 1.15);
+@define-color menu_bg_color @theme_bg_color;
 @define-color menu_fg_color @theme_text_color;
 @define-color panel_bg_color alpha(#000, 0.5);
 @define-color panel_fg_color #f2f2f2;

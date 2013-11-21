@@ -2,17 +2,18 @@
 <metacity_theme>
 <info>
 	<name>Numix</name>
-	<author>Xylon</author>
+	<author>Satyajit Sahoo</author>
 	<copyright>GPL-3.0+</copyright>
-	<date>25th April 2013</date>
-	<description>Numix White Mutter Theme</description>
+	<date>8 March 2013</date>
+	<description>Numix Mutter Theme</description>
 </info>
 
 <!-- ::: CONSTANTS ::: -->
-<constant name="C_border_focused" value="gtk:custom(wm_border_focused,shade/gtk:bg[NORMAL]/0.7)" />
-<constant name="C_border_unfocused" value="gtk:custom(wm_border_unfocused,shade/gtk:bg[NORMAL]/0.8)" />
-<constant name="C_title_focused" value="gtk:custom(wm_title_focused,blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.1)" />
-<constant name="C_title_unfocused" value="gtk:custom(wm_title_unfocused,blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.6)" />
+<constant name="C_titlebar" value="gtk:custom(wm_bg,#2d2d2d)" />
+<constant name="C_border_focused" value="gtk:custom(wm_border_focused,#484848)" />
+<constant name="C_border_unfocused" value="gtk:custom(wm_border_unfocused,#393939)" />
+<constant name="C_title_focused" value="gtk:custom(wm_title_focused,#dcdcdc)" />
+<constant name="C_title_unfocused" value="gtk:custom(wm_title_unfocused,#888888)" />
 
 <!-- ::: GEOMETRY ::: -->
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="1" rounded_top_right="1">
@@ -23,7 +24,7 @@
 	<distance name="right_titlebar_edge" value="4" />
 	<distance name="title_vertical_pad" value="0" />
 	<aspect_ratio name="button" value="1.0" />
-	<border name="title_border" left="10" right="10" top="4" bottom="4" />
+	<border name="title_border" left="8" right="8" top="4" bottom="4" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0" />
 </frame_geometry>
 
@@ -43,13 +44,16 @@
 	<distance name="left_width" value="1" />
 </frame_geometry>
 
-<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="false" rounded_top_right="false">
-	<distance name="title_vertical_pad" value="2" />
-	<border name="title_border" left="10" right="10" top="4" bottom="4" />
+<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="1" rounded_top_right="1">
+	<distance name="title_vertical_pad" value="0" />
+	<border name="title_border" left="8" right="8" top="4" bottom="4" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0"  />
 </frame_geometry>
 
-<frame_geometry name="small_unfocused" parent="small" />
+<frame_geometry name="small_unfocused" parent="small">
+	<distance name="left_titlebar_edge" value="1"/>
+	<distance name="right_titlebar_edge" value="1"/>
+</frame_geometry>
 
 <frame_geometry name="nobuttons" hide_buttons="true" parent="normal" />
 
@@ -58,22 +62,23 @@
 	<distance name="right_width" value="1" />
 	<distance name="bottom_height" value="1" />
 	<distance name="title_vertical_pad" value="0" />
+	<border name="title_border" left="0" right="0" top="0" bottom="0" />
+	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="borderless" has_title="false" rounded_top_left="false" rounded_top_right="false" parent="normal">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
 	<distance name="bottom_height" value="0" />
+	<distance name="title_vertical_pad" value="0" />
 	<border name="title_border" left="0" right="0" top="0" bottom="0" />
 	<border name="button_border" left="0" right="0" top="0" bottom="0" />
 </frame_geometry>
 
-<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="1" rounded_top_right="1" rounded_bottom_right="2" rounded_bottom_left="2" parent="small">
-	<distance name="title_vertical_pad" value="0" />
+<frame_geometry name="modal" title_scale="small" hide_buttons="true" rounded_top_left="1" rounded_top_right="1" rounded_bottom_right="1" rounded_bottom_left="1" parent="small">
 </frame_geometry>
 
-<frame_geometry name="attached" title_scale="small" hide_buttons="true" rounded_top_left="false" rounded_top_right="false" parent="small">
-	<distance name="title_vertical_pad" value="0" />
+<frame_geometry name="attached" title_scale="small" hide_buttons="true" rounded_top_left="1" rounded_top_right="1" parent="small">
 </frame_geometry>
 
 <!-- ::: TITLES ::: -->
@@ -103,7 +108,7 @@
 
 <!-- ::: WINDOW DECORATIONS ::: -->
 <draw_ops name="entire_background_focused">
-	<rectangle color="gtk:custom(wm_bg,gtk:bg[NORMAL])" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_titlebar" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
@@ -111,7 +116,7 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_focused">
-	<rectangle color="gtk:custom(wm_bg,gtk:bg[NORMAL])" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_titlebar" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_fill_attached_focused">
@@ -119,7 +124,7 @@
 </draw_ops>
 
 <draw_ops name="titlebar_fill_unfocused">
-	<rectangle color="gtk:custom(wm_bg,gtk:bg[NORMAL])" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_titlebar" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
@@ -311,15 +316,19 @@
 
 <!-- shade icon -->
 <draw_ops name="shade_focused">
+	<image filename="shade_focused_normal.png" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="shade_focused_prelight">
+	<image filename="shade_focused_prelight.png" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="shade_focused_pressed">
+	<image filename="shade_focused_pressed.png" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="shade_unfocused">
+	<image filename="shade_unfocused.png" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="shade_unfocused_prelight">
@@ -332,15 +341,19 @@
 
 <!-- unshade icon -->
 <draw_ops name="unshade_focused">
+	<image filename="unshade_focused_normal.png" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="unshade_focused_prelight">
+	<image filename="unshade_focused_prelight.png" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="unshade_focused_pressed">
+	<image filename="unshade_focused_pressed.png" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="unshade_unfocused">
+	<image filename="unshade_unfocused.png" x="0" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <draw_ops name="unshade_unfocused_prelight">

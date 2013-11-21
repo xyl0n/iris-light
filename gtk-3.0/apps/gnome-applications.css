@@ -81,27 +81,40 @@ WnckPager, WnckTasklist {
 /************
  * nautilus *
  ************/
-.nautilus-canvas-item {
-    border-radius: 2px;
-}
-
 .nautilus-desktop.nautilus-canvas-item {
-    color: #fff;
-    text-shadow: 1px 1px #000;
+    /*color: @bg_color;*/
+    background-image: none;
+    background-color: #000000;
+    border-radius: 2;
+    color: #ffffff;
+    /*text-shadow: 1 1 alpha (#000000, 0.8);*/
+    text-shadow: none;
 }
 
 .nautilus-desktop.nautilus-canvas-item:active {
-    color: @theme_fg_color;
+    background-image: none;
+    background-color: alpha (@bg_color, 0.84);
+    border-radius: 2;
+
+    color: @fg_color;
 }
 
 .nautilus-desktop.nautilus-canvas-item:selected {
-    color: @theme_selected_fg_color;
+    background-image: none;
+    background-color: alpha (@selected_bg_color, 0.84);
+    border-radius: 2;
+
+    color: @selected_fg_color;
 }
 
 .nautilus-desktop.nautilus-canvas-item:active,
 .nautilus-desktop.nautilus-canvas-item:prelight,
 .nautilus-desktop.nautilus-canvas-item:selected {
     text-shadow: none;
+}
+ 
+.nautilus-canvas-item {
+    border-radius: 2px;
 }
 
 NautilusWindow .sidebar .frame {

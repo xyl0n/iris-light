@@ -70,6 +70,19 @@
 /***************
  * base states *
  ***************/
+.background {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
+.background.client-decorated {
+    background-color: transparent;
+}
+
+.background.window-content {
+    background-color: @theme_bg_color;
+}
+
 GtkWindow {
     color: @theme_fg_color;
     background-color: @theme_bg_color;
@@ -251,6 +264,10 @@ GtkComboBox.combobox-entry .button:insensitive {
 
 GtkComboBox .cell {
     color: @theme_selected_fg_color;   
+}
+
+GtkComboBox .menuitem:hover {
+    color: #00ff00;
 }
 
 GtkComboBox .button {
