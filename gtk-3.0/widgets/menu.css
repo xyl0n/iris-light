@@ -53,7 +53,7 @@ GtkTreeMenu.menu:active {
  ***************/
 .menubar.menuitem,
 .menubar .menuitem {
-    padding: 6px 6px; /*Item on menubar*/
+    padding: 3px 6px; /*Item on menubar*/
     border-width: 1px 1px 0 1px;
     background-color: @menubar_bg_color;
     color: @menubar_fg_color;
@@ -81,7 +81,7 @@ GtkTreeMenu.menu:active {
  ************/
 GtkTreeMenu .menuitem {
     color: @menu_fg_color;
-    padding: 6px 6px;
+    padding: 4px 6px;
     border-width: 0;
     background-color: @menu_bg_color;
 }
@@ -92,7 +92,7 @@ GtkTreeMenu .menuitem * {
 
 .menuitem,
 .menu .menuitem {
-    padding: 6px 3px;
+    padding: 4px 3px;
     border-style: none;
     border-radius: 0;
     background-color: @menu_bg_color;
@@ -112,7 +112,7 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
     transition: 200ms linear;
-    background-color: shade(@menu_bg_color, 0.92);
+    background-color: shade(@menu_bg_color, 0.97);
     color: @theme_selected_bg_color;/*shade(mix(@plum, @theme_selected_bg_color, 0.5), 1.45);/*@menu_item_selected;*/
 }
 

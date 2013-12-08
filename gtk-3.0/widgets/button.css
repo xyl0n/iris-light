@@ -6,7 +6,7 @@
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
 
-    padding: 4px 25px;
+    padding: 4px 10px;
 }
 
 .button {

@@ -199,7 +199,7 @@
 
 .inline-toolbar.toolbar .button *:insensitive,
 .inline-toolbar.toolbar GtkToolButton .button:insensitive {
-    background-color: shade(@theme_bg_color, 0.9);
+    background-color: shade(@theme_bg_color, 1.07);
     background-image: none;
 }
 
