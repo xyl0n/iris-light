@@ -313,17 +313,17 @@ GtkComboBox .button:active:hover {
  ************/
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focus {
-    border-width: 0px;
+    border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_selected_bg_color, 0.9);
+    border-color: shade(@theme_selected_bg_color, 0.8);
     border-radius: 0;
     background-image: transparent;
-    background-color: transparent;
+    background-color: alpha(@theme_selected_bg_color, 0.3);
 
     color: @theme_selected_bg_color;
 }
 
-.view.rubberband,
+.view.rubberband, /*The selection thing when you click and drag on nautilus view*/
 .rubberband {
     border-width: 1px;
     border-style: solid;
@@ -685,15 +685,14 @@ GtkStatusbar {
  * switch *
  **********/
 GtkSwitch {
-    padding: 0;
-    border-radius: 0;
-    font: bold condensed;
+    padding: 0px;
+    border-radius: 15;
+    font: bold;
 }
 
 GtkSwitch.slider {
-    border-style: solid;
-    border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 1.08);
+    border-style: none;
+    background-color: shade(@theme_bg_color, 0.85);
     background-image: none;
 }
 
@@ -704,17 +703,25 @@ GtkSwitch.slider:insensitive {
 }
 
 GtkSwitch.trough {
-    border-color: shade(@theme_bg_color, 0.8);
+    border-style: none;
     background-color: shade(@theme_bg_color, 0.95);
     background-image: none;
     color: @theme_fg_color;
+    box-shadow: inset 0px 1px 1px shade(@theme_bg_color, 0.85),
+		inset 0px -1px 1px shade(@theme_bg_color, 0.85),
+		inset 1px 0px 1px shade(@theme_bg_color, 0.85),
+	 	inset -1px 0px 1px shade(@theme_bg_color, 0.85);
 }
 
 GtkSwitch.trough:active {
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    border-style: none;
+    background-color: shade(@theme_bg_color, 0.95);
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: @theme_selected_bg_color;
+    box-shadow: inset 0px 1px 1px shade(@theme_bg_color, 0.85),
+		inset 0px -1px 1px shade(@theme_bg_color, 0.85),
+		inset 1px 0px 1px shade(@theme_bg_color, 0.85),
+	 	inset -1px 0px 1px shade(@theme_bg_color, 0.85);
 }
 
 GtkSwitch.trough:insensitive {
