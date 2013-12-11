@@ -1,6 +1,6 @@
 gtk-color-scheme = "base_color:#FBFBFB\nbg_color:#EEEEEE"
 gtk-color-scheme = "text_color:#424242\nfg_color:#666666"
-gtk-color-scheme = "tooltip_bg_color:#161616\ntooltip_fg_color:#ffffff\nlink_color:#4a90f9"
+gtk-color-scheme = "tooltip_bg_color:#161616\ntooltip_fg_color:#ffffff\nlink_color:#df253f"
 
 gtk-color-scheme = "theme_bg_dark_color:#EEEEEE\ntheme_fg_dark_color:#424242\ntheme_text_dark_color:#363636"
 #gtk-color-scheme = "theme_bg_dark_color:#D0D0D0\ntheme_fg_dark_color:#363636\ntheme_text_dark_color:#242424"
@@ -10,7 +10,7 @@ gtk-color-scheme = "selected_fg_color:#FFFFFF"
 
 #  selection background color #####################################
 #  should be the same color that you have set in the file gtk.css #
-gtk-color-scheme = "selected_bg_color:#888888"
+gtk-color-scheme = "selected_bg_color:#df253f"
 ###################################################################
 
 gtk-auto-mnemonics	= 1
@@ -202,8 +202,13 @@ style "button" {
 
     bg[NORMAL]                      = shade (0.91, @bg_color)
     bg[PRELIGHT]                    = shade (0.94, @bg_color)    
-	bg[ACTIVE]                      = shade (1.00, @selected_bg_color)	# Pulsado
-  	bg[INSENSITIVE] 				= shade (0.94, @bg_color)
+    bg[ACTIVE]                      = shade (1.00, @selected_bg_color)	# Pulsado
+    bg[INSENSITIVE] 		    = shade (0.94, @bg_color)
+
+    fg[NORMAL]                      = shade (0.91, @bg_color)
+    fg[PRELIGHT]                    = shade (0.94, @bg_color)    
+    fg[ACTIVE]                      = shade (1.00, @selected_bg_color)	# Pulsado
+    fg[INSENSITIVE] 		    = shade (0.94, @bg_color)
 
 	engine "murrine" {
 		contrast                = 0.0
