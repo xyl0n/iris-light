@@ -793,9 +793,8 @@ GtkViewport.frame {
 
 .view:selected,
 .view:selected:focus {
-    transition: 200ms linear;
-    background-color: transparent;
-    color: shade(mix(@theme_selected_bg_color, #ff0000, 0.75), 1.25); /*TreeView selected for dconf and sidebars and stuff*/
+    background-color: alpha(@theme_selected_bg_color, 0.85); 
+    color: @theme_selected_fg_color; /*TreeView selected for dconf and sidebars and stuff*/
 }
 
 /*Headerbar*/
