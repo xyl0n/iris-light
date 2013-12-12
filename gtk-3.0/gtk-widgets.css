@@ -681,56 +681,6 @@ GtkStatusbar {
     color: @theme_fg_color;
 }
 
-/**********
- * switch *
- **********/
-GtkSwitch {
-    padding: 0px;
-    border-radius: 15;
-    font: bold;
-}
-
-GtkSwitch.slider {
-    border-style: none;
-    background-color: shade(@theme_bg_color, 0.85);
-    background-image: none;
-}
-
-GtkSwitch.slider:insensitive {
-    border-color: shade(@theme_bg_color, 0.85);
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-}
-
-GtkSwitch.trough {
-    border-style: none;
-    background-color: shade(@theme_bg_color, 0.95);
-    background-image: none;
-    color: @theme_fg_color;
-    box-shadow: inset 0px 1px 1px shade(@theme_bg_color, 0.85),
-		inset 0px -1px 1px shade(@theme_bg_color, 0.85),
-		inset 1px 0px 1px shade(@theme_bg_color, 0.85),
-	 	inset -1px 0px 1px shade(@theme_bg_color, 0.85);
-}
-
-GtkSwitch.trough:active {
-    border-style: none;
-    background-color: shade(@theme_bg_color, 0.95);
-    background-image: none;
-    color: @theme_selected_bg_color;
-    box-shadow: inset 0px 1px 1px shade(@theme_bg_color, 0.85),
-		inset 0px -1px 1px shade(@theme_bg_color, 0.85),
-		inset 1px 0px 1px shade(@theme_bg_color, 0.85),
-	 	inset -1px 0px 1px shade(@theme_bg_color, 0.85);
-}
-
-GtkSwitch.trough:insensitive {
-    border-color: shade(@theme_bg_color, 0.85);
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
-}
-
 /************
  * textview *
  ************/
@@ -962,25 +912,44 @@ GtkViewport.frame {
  * List boxes *
  **************/
 EggListBox {
-	background-color: @base_color; 
+    background-color: @base_color;
+    border-style: solid;
+    border-width: 10px;
+    border-color: shade(@theme_fg_color, 1.25);
 }	
 
 EggListBox:hover {
-	background-color: @base_color;
+    background-color: @base_color;
 }
 
 EggListBox:selected {
-	color: @theme_selected_bg_color;
+    color: @theme_selected_bg_color;
 }
 
 .list {
-	background-color: @base_color;
+    background-color: @base_color;
+    border-style: solid;
+    border-width: 10px;
+    border-color: shade(@theme_fg_color, 1.25);
 }
 
 .list-row:hover {
-	background-color: @base_color;
+    background-color: @base_color;
 }
 
 .list-row:selected {
-	color: @theme_selected_bg_color;
+    color: @theme_selected_bg_color;
+}
+
+
+/*Search bar*/
+.search-bar {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: shade(@theme_bg_color, 0.98);
+}
+
+.search-bar .button.close-button {
+    padding: 4px;
 }
