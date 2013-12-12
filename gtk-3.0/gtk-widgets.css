@@ -676,9 +676,14 @@ GtkOverlay.osd {
 /*************
  * statusbar *
  *************/
-GtkStatusbar {
+GtkStatusbar *{
     padding: 3px;
-    color: @theme_fg_color;
+    color: @theme_text_color;
+}
+
+GtkStatusBar:hover *{
+    background-color: @theme_base_color;
+    color: @theme_selected_bg_color;
 }
 
 /************
