@@ -57,7 +57,7 @@
 .primary-toolbar .raised.button:hover,
 .primary-toolbar .button:hover,
 .toolbar .button:hover {
-    transition: 75ms ease-in;
+    transition: 200ms ease-in-out;
     border-color: shade(@toolbar_bg_color, 0.85);
     background-color: @toolbar_bg_color;
     background-image: none;
@@ -68,7 +68,7 @@
 .primary-toolbar .raised .button:active,
 .primary-toolbar .raised.button:active,
 {
-    transition: 75ms linear;
+    transition: 150ms linear;
     border-radius: 0px;
     border-color: shade(@toolbar_bg_color, 0.75);
     background-color: shade(@toolbar_bg_color, 1.15);
@@ -78,7 +78,7 @@
 
 .primary-toolbar .button:active,
 .toolbar .button:active {
-    transition: 75ms linear;
+    transition: 150ms linear;
     border-radius: 0px;
     border-color: shade(@toolbar_bg_color, 0.75);
     background-color: shade(@toolbar_bg_color, 1.15);
@@ -100,7 +100,7 @@
 .toolbar .button:hover:focus,
 .toolbar .button:active:focus,
 .toolbar .button:active:hover:focus {
-    transition: 500ms linear;
+    transition: 200ms linear;
     border-color: shade(@toolbar_bg_color, 0.85);
     color: shade(@toolbar_fg_color, 0.7);
 }
@@ -224,7 +224,7 @@
 .inline-toolbar.toolbar GtkToolButton .button:focus,
 .inline-toolbar.toolbar GtkToolButton .button:focus:active,
 .inline-toolbar.toolbar GtkToolButton .button:insensitive {
-    border-width: 0`;
+    border-width: 0;
     border-right-width: 0;
     border-radius: 0;
     background-color: transparent;

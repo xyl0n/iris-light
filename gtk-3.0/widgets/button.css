@@ -6,7 +6,8 @@
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
 
-    padding: 4px 10px;
+    padding: 4px 20px;
+    font: bold;
 }
 
 .button {
@@ -18,7 +19,7 @@
 }
 
 .button:hover {
-    transition: 200ms ease-in;
+    transition: 150ms ease-in;
     background-color: shade(@button_bg_color, 1.17);
     background-image: none;
     color: @theme_selected_fg_color;

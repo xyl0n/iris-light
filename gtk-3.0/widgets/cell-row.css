@@ -7,10 +7,6 @@
     border-radius: 0;
 }
 
-GtkCombobox.cell {
-    color: #00ff00;
-}
-
 .cell:selected,
 .cell:selected:focus {
     /*background-color: @theme_selected_bg_color;

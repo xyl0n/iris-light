@@ -17,6 +17,7 @@ GtkTreeMenu.menu:active {
 .toolbar .menu,
 .toolbar .primary-toolbar .menu,
 .menu {
+    font: normal;
     padding: 0;
     border-width: 0;
     border-radius: 0;
@@ -101,7 +102,7 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem:active,
 .menu .menuitem:hover {
     border-style: none;
-    background-color: shade(@menu_bg_color, 0.97);
+    background-color: shade(@menu_bg_color, 0.95);
     border-radius: 0;
     color: @theme_selected_bg_color;
     background-image: none;
@@ -112,8 +113,8 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
     transition: 200ms linear;
-    background-color: shade(@menu_bg_color, 0.97);
-    color: @theme_selected_bg_color;/*shade(mix(@plum, @theme_selected_bg_color, 0.5), 1.45);/*@menu_item_selected;*/
+    background-color: shade(@menu_bg_color, 0.95);
+    color: @theme_selected_bg_color;
 }
 
 .menu .menuitem:insensitive,

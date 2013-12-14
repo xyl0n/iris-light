@@ -62,6 +62,7 @@
     color: @theme_fg_color;
 }   
 
+
 .content-view .toolbar {
     -GtkWidget-window-dragging: true;
 

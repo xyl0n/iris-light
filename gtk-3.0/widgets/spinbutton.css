@@ -30,7 +30,7 @@
 }
 
 .spinbutton.button:insensitive {
-    border-color: shade(@theme_bg_color, 0.9);
+    border-color: alpha(@theme_bg_color, 0.01);
     color: mix(@theme_fg_color, @theme_bg_color, 0.5);
 }
 

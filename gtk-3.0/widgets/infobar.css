@@ -20,17 +20,12 @@ GtkInfoBar {
 }
 
 .info .button.close:hover {
-    background-image: linear-gradient(to bottom,
-                                      alpha(white, 0.3),
-                                      alpha(white, 0.2) 30%,
-                                      alpha(black, 0.02));
+    background-image: none;
 }
 
 .info .button.close:active {
     color: @info_fg_color;
-    background-image: linear-gradient(to bottom,
-                                      alpha(black, 0.1),
-                                      transparent);
+    background-image: none;
 }
 
 .warning {
@@ -47,17 +42,12 @@ GtkInfoBar {
 }
 
 .warning .button.close:hover {
-    background-image: linear-gradient(to bottom,
-                                      alpha(white, 0.3),
-                                      alpha(white, 0.2) 30%,
-                                      alpha(black, 0.02));
+    background-image: none;
 }
 
 .warning .button.close:active {
     color: @warning_fg_color;
-    background-image: linear-gradient(to bottom,
-                                      alpha(black, 0.1),
-                                      transparent);
+    background-image: none;
 }
 
 .question {
@@ -74,17 +64,12 @@ GtkInfoBar {
 }
 
 .question .button.close:hover {
-    background-image: linear-gradient(to bottom,
-                                      alpha(white, 0.3),
-                                      alpha(white, 0.2) 30%,
-                                      alpha(black, 0.02));
+    background-image: none;
 }
 
 .question .button.close:active {
     color: @question_fg_color;
-    background-image: linear-gradient(to bottom,
-                                      alpha(black, 0.1),
-                                      transparent);
+    background-image: none;
 }
 
 .error {
@@ -101,16 +86,11 @@ GtkInfoBar {
 }
 
 .error .button.close:hover {
-    background-image: linear-gradient(to bottom,
-                                      alpha(white, 0.3),
-                                      alpha(white, 0.2) 30%,
-                                      alpha(black, 0.02));
+    background-image: none;
 }
 
 .error .button.close:active {
     color: @error_fg_color;
-    background-image: linear-gradient(to bottom,
-                                      alpha(black, 0.1),
-                                      transparent);
+    background-image: none;
 }
 
