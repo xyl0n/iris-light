@@ -246,19 +246,19 @@ GeditWindow .notebook tab {
     border-width: 0;
 }
 
-GeditStatusComboBox .button,
-GeditStatusComboBox .button:hover,
-GeditStatusComboBox .button:active,
-GeditStatusComboBox .button:active:hover {
+GeditStatusMenuButton.button,
+GeditStatusMenuButton.button:hover,
+GeditStatusMenuButton.button:active,
+GeditStatusMenuButton.button:active:hover {
     padding: 1px 6px 2px 4px;
     border-style: solid;
     border-width: 0 1px;
     border-radius: 0;
 }
 
-GeditStatusComboBox .button:hover,
-GeditStatusComboBox .button:active,
-GeditStatusComboBox .button:active:hover {
+GeditStatusMenuButton.button:hover,
+GeditStatusMenuButton.button:active,
+GeditStatusMenuButton.button:active:hover {
     border-color: shade(@theme_bg_color, 0.8);
 }
 
@@ -308,4 +308,20 @@ GucharmapChartable:focus,
 GucharmapChartable:selected {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
+}
+
+/*************
+ * evolution *
+ *************/
+EPreviewPane .entry {
+    background-color: @theme_base_color;
+    color: @theme_text_color;
+}
+
+/******************
+ * gnome calendar *
+ ******************/
+.calendar-view {
+    background-color: shade(@theme_base_color, 0.95);
+    color: @theme_text_color;
 }

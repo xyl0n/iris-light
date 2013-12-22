@@ -27,15 +27,6 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-top-left-radius: 0;
 }
 
-GtkComboBox .cell {
-    color: @theme_text_color;   
-}
-
-GtkComboBox .cell:hover {
-    transition: 150ms ease-in;
-    color: @theme_selected_bg_color;   
-}
-
 GtkComboBox .button {
     padding: 4px 10px;
     background-color: shade(@theme_bg_color, 0.87);
