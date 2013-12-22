@@ -1,0 +1,32 @@
+/***********
+ * sidebar *
+ ***********/
+.sidebar,
+.sidebar.view,
+.sidebar .view {
+    background-color: #e3e7ec;
+    font-weight: bold;
+    color: @theme_fg_color;
+}
+
+.sidebar .image:selected {
+    color: @theme_fg_color;
+}
+
+.sidebar .image:selected:focus,
+.sidebar .image:selected:hover {
+    color: @theme_selected_bg_color;
+}
+
+.sidebar .cell:selected,
+.sidebar .cell:selected:focus {
+    background-color: alpha(@theme_fg_color, 0.15);
+    box-shadow: 0px 1px alpha(@theme_fg_color, 0.07) inset,
+		0px -1px alpha(@theme_base_color, 0.15) inset;
+    color: @theme_selected_bg_color;
+    background-image: none;
+}
+
+.sidebar .frame {
+    border-width: 0;
+}
