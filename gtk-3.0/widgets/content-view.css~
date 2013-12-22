@@ -122,6 +122,5 @@ GtkIconView.content-view.check:selected {
     border-style: none;
     background-color: @menu_bg_color;
     background-image: none;
-    color: @menu_fg_color; 
-}
+    color: @menu_fg_color;
 

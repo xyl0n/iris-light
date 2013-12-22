@@ -18,6 +18,12 @@
     color: @theme_selected_bg_color;
 }
 
+.sidebar .cell:selected {
+    background-color: shade(@theme_base_color, 0.95);
+    box-shadow: 0px 1px shade(@theme_base_color, 0.92) inset,
+                0px -1px shade(@theme_base_color, 0.97) inset;
+}
+
 .sidebar .frame {
     border-width: 0;
 }
