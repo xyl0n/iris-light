@@ -325,25 +325,3 @@ EPreviewPane .entry {
     background-color: shade(@theme_base_color, 0.95);
     color: @theme_text_color;
 }
-
-/*Gnome Control Center*/
-
-CcEditableEntry .button,
-UmEditableButton .button,
-UmEditableCombo .button {
-    border-style: solid;
-    border-width: 1px;
-    border-color: shade(@theme_bg_color, 1.0);
-    color: @theme_text_color;
-}
-
-CcEditableEntry .button:hover,
-UmEditableButton .button:hover,
-UmEditableCombo .button:hover {
-    transition: none;
-    border-style: solid;
-    border-width: 1px;
-    border-color: shade(@theme_bg_color, 0.9);
-    background-color: @theme_bg_color;
-    color: @theme_selected_bg_color;
-}
