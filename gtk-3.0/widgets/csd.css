@@ -45,7 +45,7 @@
 }
 
 .titlebar .titlebutton {
-    padding: 11px 11px;
+    padding: 6px 6px;
     border-style: none;
     background: none;
     color: @toolbar_fg_color;

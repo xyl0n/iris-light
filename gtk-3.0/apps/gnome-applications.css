@@ -347,3 +347,10 @@ UmEditableCombo .button:hover {
     background-color: @theme_bg_color;
     color: @theme_selected_bg_color;
 }
+
+/*Ubuntu Software Center*/
+TileButton .button,
+TileButton.button,
+LabelTile *{
+    color: #00ff00;
+}

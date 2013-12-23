@@ -5,16 +5,15 @@
 	border-color: shade(@toolbar_bg_color, 0.90);
 
 	background-color: @toolbar_bg_color;
-
-	padding: 6px 6px 5px 6px;
+    padding: 6px 6px;
 }
 
 .header-bar .button.text-button {
-	padding: 2px 16px;
+	padding: 6px 6px;
 }
 
 .header-bar .button.image-button {
-	padding: 5px 4px 5px 5px;
+	padding: 6px 6px;
 }
 
 .header-bar .title {
