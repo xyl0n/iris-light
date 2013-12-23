@@ -12,7 +12,7 @@
 
 .button .separator,
 .button.separator {
-    border-color: shade(@theme_bg_color, 0.95);
+    border-color: @button_bg_color;
 }
 
 .button .separator:insensitive,
@@ -29,8 +29,8 @@
 .header-bar GtkSeparatorToolItem,
 .header-bar .separator,
 .header-bar .separator:insensitive {
-    border-color: shade(@toolbar_bg_color, 0.95);
-    color: shade(@toolbar_bg_color, 0.95);
+    border-color: shade(@toolbar_bg_color, 0.87);
+    color: shade(@toolbar_bg_color, 0.87);
 }
 
 .primary-toolbar .button .separator,
