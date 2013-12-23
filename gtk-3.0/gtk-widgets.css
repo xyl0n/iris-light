@@ -348,6 +348,18 @@ GtkStatusbar {
     color: @theme_fg_color;
 }
 
+GtkStatusbar .button {
+    color: @theme_fg_color;
+}
+
+GtkStatusbar .button:hover,
+GtkStatusbar .button:active,
+GtkStatusbar .button:active:hover {
+    transition: none;
+    color: @theme_selected_bg_color;
+    background-color: @theme_bg_color;
+}
+
 /************
  * textview *
  ************/
