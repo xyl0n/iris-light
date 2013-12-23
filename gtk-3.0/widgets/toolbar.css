@@ -119,18 +119,6 @@
     background-image: none;
 }
 
-.primary-toolbar .entry {
-    border-style: solid;
-    border-color: shade(@toolbar_bg_color, 0.85);
-    box-shadow: -1px -1px 1px shade(@theme_bg_color, 0.95) inset,
-                1px 1px 1px shade(@theme_bg_color, 0.95) inset;
-}
-
-.primary-toolbar .entry:active,
-.primary-toolbar .entry:focus {
-    border-color: shade(@toolbar_bg_color, 0.7);
-}
-
 .primary-toolbar GtkSeparatorToolItem,
 .primary-toolbar .separator,
 .primary-toolbar .separator:insensitive {
