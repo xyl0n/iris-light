@@ -15,7 +15,7 @@
     border-radius: 0;
     background-color: @button_bg_color;
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
 }
 
 .button:hover {
