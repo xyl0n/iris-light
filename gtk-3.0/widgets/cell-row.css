@@ -13,6 +13,15 @@
     background-image: none;
 }
 
+GtkTreeView.cell:selected,
+GtkTreeView.cell:selected:focus {
+    color: @theme_base_color;
+}
+
+GtkTreeView.cell.button {
+    color: @theme_fg_color;
+}
+
 row:selected,
 row:selected:hover,
 row:selected:focus {

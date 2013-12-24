@@ -50,20 +50,20 @@
 /* osd */
 @define-color osd_base #fefefe;
 @define-color osd_fg #2d2d2d;
-@define-color osd_bg alpha(@osd_base, 0.8);
+@define-color osd_bg @osd_base;
 
 /* window manager colors */
-@define-color wm_bg #2d2d2d;
-@define-color wm_border_focused #484848;
-@define-color wm_border_unfocused #393939;
-@define-color wm_title_focused #dcdcdc;
-@define-color wm_title_unfocused #888888;
-@define-color wm_icons_focused #dcdcdc;
-@define-color wm_icons_focused_prelight #d64937;
-@define-color wm_icons_focused_pressed #b63e2e;
-@define-color wm_icons_unfocused #888888;
-@define-color wm_icons_unfocused_prelight #d64937;
-@define-color wm_icons_unfocused_pressed #b63e2e;
+@define-color wm_bg @theme_bg_color;
+@define-color wm_border_focused @theme_bg_color;
+@define-color wm_border_unfocused shade(@theme_bg_color, 0.92);
+@define-color wm_title_focused @theme_fg_color;
+@define-color wm_title_unfocused alpha(@theme_fg_color, 0.95);
+@define-color wm_icons_focused @theme_fg_color;
+@define-color wm_icons_focused_prelight shade(@theme_selected_bg_color, 1.15);
+@define-color wm_icons_focused_pressed @theme_selected_bg_color;
+@define-color wm_icons_unfocused alpha(@theme_fg_color, 0.95);
+@define-color wm_icons_unfocused_prelight shade(@theme_selected_bg_color, 1.15);
+@define-color wm_icons_unfocused_pressed @theme_selected_bg_color;
 
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");

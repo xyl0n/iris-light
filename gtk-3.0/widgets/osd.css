@@ -18,10 +18,9 @@ GtkOverlay.osd {
 .osd.button,
 .osd .button {
     padding: 4px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@osd_bg, 0.8);
-    border-radius: 2px;
+    border-width: 0px;
+    border-style: none;
+    border-radius: 0px;
     background-color: shade(@osd_bg, 1.08);
     background-image: none;
     color: @osd_fg;
@@ -68,7 +67,7 @@ GtkOverlay.osd {
     padding: 4px;
     border-width: 1px;
     border-style: solid;
-    border-radius: 2px;
+    border-radius: 0px;
     border-color: shade(@osd_bg, 0.8);
     background-color: @osd_bg;
     background-image: none;
@@ -77,11 +76,11 @@ GtkOverlay.osd {
 
 .osd.toolbar .button {
     padding: 4px;
-    border-width: 1px;
+    border-width: 0px;
     border-style: solid;
     border-color: shade(@osd_bg, 0.8);
-    border-radius: 2px;
-    background-color: shade(@osd_bg, 1.08);
+    border-radius: 0px;
+    background-color: #00ff00;
     background-image: none;
     color: @osd_fg;
 }
