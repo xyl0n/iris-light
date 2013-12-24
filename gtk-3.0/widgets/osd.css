@@ -75,30 +75,33 @@ GtkOverlay.osd {
 }
 
 .osd.toolbar .button {
-    padding: 4px;
+    padding: 4px 6px;
     border-width: 0px;
     border-style: solid;
     border-color: shade(@osd_bg, 0.8);
     border-radius: 0px;
-    background-color: #00ff00;
+    background-color: @osd_bg;
     background-image: none;
     color: @osd_fg;
 }
 
 .osd.toolbar .button:hover {
     border-color: shade(@osd_bg, 0.7);
-    background-color: shade(@osd_bg, 1.10);
+    background-color: shade(@osd_bg, 1.1);
     background-image: none;
+    color: @osd_fg;
 }
 
 .osd.toolbar .button:active {
     border-color: shade(@osd_bg, 0.8);
     background-color: shade(@osd_bg, 0.95);
     background-image: none;
+    color: @theme_selected_bg_color;
 }
 
 .osd.toolbar .button:active:hover {
     border-color: shade(@osd_bg, 0.7);
+    color: @theme_selected_bg_color;
 }
 
 .osd.toolbar .button:focus,
@@ -106,6 +109,7 @@ GtkOverlay.osd {
 .osd.toolbar .button:active:focus,
 .osd.toolbar .button:active:hover:focus {
     border-color: shade(@osd_bg, 0.7);
+    color: shade(@theme_selected_bg_color, 1.25);
 }
 
 .osd.toolbar .button:insensitive {

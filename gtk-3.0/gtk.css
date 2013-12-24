@@ -48,9 +48,9 @@
 @define-color panel_fg_color #f2f2f2;
 
 /* osd */
-@define-color osd_base #fefefe;
-@define-color osd_fg #2d2d2d;
-@define-color osd_bg @osd_base;
+@define-color osd_base #222;
+@define-color osd_fg #fefefe;
+@define-color osd_bg #222;
 
 /* window manager colors */
 @define-color wm_bg @theme_bg_color;
