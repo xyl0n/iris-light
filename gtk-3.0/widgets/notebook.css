@@ -4,6 +4,7 @@
 .notebook {
     padding: 0;
     border-style: solid;
+    border-width: 1px;
     border-color: shade(@theme_bg_color, 0.85);
     border-radius: 0;
     background-color: @theme_base_color;

@@ -4,7 +4,7 @@
 .sidebar,
 .sidebar.view,
 .sidebar .view {
-    background-color: @theme_base_color;
+    background-color: shade(@theme_base_color, 1.0);
     font-weight: bold;
     color: @theme_fg_color;
 }
