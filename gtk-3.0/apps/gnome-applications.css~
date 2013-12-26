@@ -357,4 +357,8 @@ UmEditableCombo .button:hover {
 #category-view .button {
     color: @theme_fg_color;
     background-color: transparent;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f76f7c14c369883a607d6bd58e011c64c36d8194
