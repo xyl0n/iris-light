@@ -18,11 +18,6 @@
     color: @theme_selected_bg_color;
 }
 
-.sidebar .cell:selected,
-.sidebar .cell:selected:focus {
-    color: @theme_selected_bg_color;
-}
-
 .sidebar .frame {
     border-width: 0;
 }
