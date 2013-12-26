@@ -73,25 +73,25 @@
 .source-list,
 .source-list.view {
     border-radius: 0;
-    background-color: @theme_base_color;
+    background-color: @theme_bg_color;
     background-image: none;
-    color: @theme_fg_color;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.1);
 }
 
 .source-list {
     -GtkTreeView-horizontal-separator: 1;
-    -GtkTreeView-vertical-separator: 6;
+    -GtkTreeView-vertical-separator: 1;
 }
 
 .source-list.view:selected,
 .source-list.view:prelight:selected {
-    background-color: @theme_base_color;
+    background-color: @theme_selected_bg_color;
     background-image: none;
-    color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
 .source-list.view:prelight {
-    background-color: shade(@theme_base_color, 1.08);
+    background-color: shade(@theme_bg_color, 1.08);
     background-image: none;
 }
 
@@ -303,7 +303,7 @@ GraniteWidgetsStatusBar {
 GraniteWidgetsPopOver {
     -GraniteWidgetsPopOver-arrow-width: 21;
     -GraniteWidgetsPopOver-arrow-height: 12;
-    -GraniteWidgetsPopOver-border-radius: 0px;
+    -GraniteWidgetsPopOver-border-radius: 2px;
     -GraniteWidgetsPopOver-border-width: 1;
     -GraniteWidgetsPopOver-shadow-size: 12;
 
