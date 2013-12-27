@@ -55,6 +55,7 @@
     border-color: shade(@theme_bg_color, 0.7);
     background-color: shade(@theme_bg_color, 1.10);
     background-image: none;
+    color: #00ff00;
 }
 
 .dynamic-notebook .button:hover:active,
@@ -87,7 +88,7 @@
 .source-list.view:prelight:selected {
     background-color: @theme_base_color;
     background-image: none;
-    color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
 .source-list.view:prelight {
@@ -103,9 +104,9 @@
     padding: 0 6px;
     border-width: 0;
     border-radius: 10px;
-    background-color: @theme_selected_bg_color;
+    background-color: @theme_selected_fg_color;
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
 }
 
 /******************
@@ -150,36 +151,36 @@
  **********************/
 .button.affirmative,
 .content-view .button.affirmative {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    background-color: shade(@theme_selected_bg_color, 1.08);
+    border-color: shade(@theme_selected_fg_color, 0.8);
+    background-color: shade(@theme_selected_fg_color, 1.08);
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
 }
 
 .button.affirmative:hover,
 .content-view .button.affirmative:hover {
-    border-color: shade(@theme_selected_bg_color, 0.7);
-    background-color: @theme_selected_bg_color;
+    border-color: shade(@theme_selected_fg_color, 0.7);
+    background-color: @theme_selected_fg_color;
     background-image: none;
 }
 
 .button.affirmative:active,
 .content-view .button.affirmative:active {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    background-color: shade(@theme_selected_bg_color, 0.95);
+    border-color: shade(@theme_selected_fg_color, 0.8);
+    background-color: shade(@theme_selected_fg_color, 0.95);
     background-image: none;
 }
 
 .button.affirmative:active:hover,
 .content-view .button.affirmative:active:hover {
-    border-color: shade(@theme_selected_bg_color, 0.7);
-    background-color: shade(@theme_selected_bg_color, 0.97);
+    border-color: shade(@theme_selected_fg_color, 0.7);
+    background-color: shade(@theme_selected_fg_color, 0.97);
     background-image: none;
 }
 
 .button.affirmative GtkLabel,
 .button.affirmative Gtklabel:prelight {
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
 }
 
 /**********************
@@ -332,9 +333,9 @@ GraniteWidgetsPopOver .sidebar.view:selected,
 GraniteWidgetsPopOver .sidebar.view:selected:focus,
 GraniteWidgetsPopOver *:selected,
 GraniteWidgetsPopOver *:selected:focus {
-    background-color: @theme_selected_bg_color;
+    background-color: @theme_selected_fg_color;
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
 }
 
 GraniteWidgetsPopOver .button {
@@ -422,17 +423,17 @@ GraniteWidgetsPopOver *.separator {
 }
 
 .button.app:hover {
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    border-color: shade(@theme_selected_fg_color, 0.9);
+    background-color: @theme_selected_fg_color;
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
 }
 
 .button.app:focus {
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    border-color: shade(@theme_selected_fg_color, 0.9);
+    background-color: @theme_selected_fg_color;
     background-image: none;
-    color: @theme_selected_fg_color;
+    color: @theme_base_color;
 }
 
 /********
@@ -448,8 +449,8 @@ GraniteWidgetsPopOver *.separator {
 .gala-workspace-selected {
     border-width: 1px;
     border-radius: 2px;
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    border-color: shade(@theme_selected_fg_color, 0.9);
+    background-color: @theme_selected_fg_color;
     background-image: none;
 }
 

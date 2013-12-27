@@ -44,7 +44,7 @@ GtkSwitch.trough:active {
     border-color: shade(@theme_bg_color, 0.9);
     background-color: shade(@theme_bg_color, 0.95);
     background-image: none;
-    color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
     /*box-shadow: inset 0px 1px 1px shade(@theme_bg_color, 0.85),
 		inset 0px -1px 1px shade(@theme_bg_color, 0.85),
 		inset 1px 0px 1px shade(@theme_bg_color, 0.85),

@@ -3,8 +3,8 @@
 @define-color fg_color #555555;
 @define-color base_color #fefefe;
 @define-color text_color #333333;
-@define-color selected_bg_color #df253f;
-@define-color selected_fg_color #fefefe;
+@define-color selected_bg_color transparent;
+@define-color selected_fg_color #df253f;
 @define-color tooltip_bg_color #fefefe;
 @define-color tooltip_fg_color #2d2d2d;
 
@@ -35,6 +35,7 @@
 @define-color success_color #53a93f;
 @define-color warning_color #f57900;
 @define-color error_color #cc0000;
+@define-color light_grey #dedede;
 
 /* widget colors */
 @define-color button_bg_color #464646;

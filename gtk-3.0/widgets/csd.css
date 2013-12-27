@@ -55,13 +55,13 @@
 .titlebar .titlebutton:hover,
 .titlebar .titlebutton:hover:focus {
     background: none;
-    color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
 .titlebar .titlebutton:active,
 .titlebar .titlebutton:active:hover {
     background: none;
-    color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
     box-shadow: none;
 }
 
@@ -95,12 +95,12 @@
 .titlebar .button:hover,
 .titlebar .button:active:hover {
     background-color: @toolbar_bg_color;
-    color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
 .titlebar .button:active {
     background-color: @toolbar_bg_color;
-    color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
 

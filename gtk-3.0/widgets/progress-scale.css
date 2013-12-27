@@ -16,12 +16,12 @@ GtkProgressBar {
     border-width: 3px;
     border-style: solid;
     border-color: shade(@theme_base_color, 0.9);
-    background-color: shade(@theme_selected_bg_color, 1.15);
+    background-color: shade(@theme_selected_fg_color, 1.15);
     background-image: none;
 }
 
 .progressbar.vertical {
-    background-color: @theme_selected_bg_color;
+    background-color: @theme_selected_fg_color;
     background-image: none;
 }
 
@@ -61,8 +61,8 @@ GtkLevelBar.vertical {
 .level-bar.fill-block {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_selected_bg_color, 0.9);
-    background-color: @theme_selected_bg_color;
+    border-color: shade(@theme_selected_fg_color, 0.9);
+    background-color: @theme_selected_fg_color;
 }
 
 .level-bar.indicator-continuous.fill-block {
@@ -136,12 +136,12 @@ GtkScale.vertical {
 GtkScale.slider {    
 
     border-radius: 15px; /*Slider handle*/
-    background-color: shade(@theme_selected_bg_color, 1.0);
+    background-color: shade(@theme_selected_fg_color, 1.0);
     background-image: none;
 }
 
 GtkScale.slider:hover {
-    background-color: shade(@theme_selected_bg_color, 1.09);
+    background-color: shade(@theme_selected_fg_color, 1.09);
 }
 
 GtkScale.slider:insensitive {
@@ -150,7 +150,7 @@ GtkScale.slider:insensitive {
 }
 
 GtkScale.slider.vertical {
-    background-color: shade(@theme_selected_bg_color, 1.0);
+    background-color: shade(@theme_selected_fg_color, 1.0);
     background-image: none;
 }
 
@@ -181,19 +181,19 @@ GtkScale.trough.vertical {
 
 .menubar .menuitem .scale.highlight.left,
 .scale.highlight.left {
-    border-color: @theme_selected_bg_color;
-    background-color: @theme_selected_bg_color;
+    border-color: @theme_selected_fg_color;
+    background-color: @theme_selected_fg_color;
     background-image: none;
 }   
 
 .menubar .menuitem .scale.highlight.left:hover {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    background-color: shade(@theme_selected_bg_color, 0.8);
+    border-color: shade(@theme_selected_fg_color, 0.8);
+    background-color: shade(@theme_selected_fg_color, 0.8);
 }
 
 .scale.highlight.bottom {
-    border-color: @theme_selected_bg_color;
-    background-color: @theme_selected_bg_color;
+    border-color: @theme_selected_fg_color;
+    background-color: @theme_selected_fg_color;
     background-image: none;
 }
 

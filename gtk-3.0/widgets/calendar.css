@@ -23,5 +23,5 @@ GtkCalendar.button:insensitive {
 GtkCalendar.highlight {
     border-width: 0;
     background-color: transparent;
-    color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
