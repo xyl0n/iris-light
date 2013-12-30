@@ -354,6 +354,11 @@ UmEditableCombo .button:hover {
     background-color: transparent;
 }
 
+.category-tile {
+    color: @theme_text_color;
+    background-color: transparent;
+}
+
 #category-view .button {
     color: @theme_fg_color;
     background-color: transparent;

@@ -13,12 +13,12 @@
 
 .button .separator,
 .button.separator {
-    border-color: @button_bg_color;
+    color: @button_bg_color;
 }
 
 .button .separator:insensitive,
 .button.separator:insensitive {
-    border-color: shade(@theme_bg_color, 0.85);
+    color: shade(@button_bg_color, 1.05);
 }
 
 .primary-toolbar GtkSeparatorToolItem,

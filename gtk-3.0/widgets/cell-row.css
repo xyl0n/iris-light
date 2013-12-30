@@ -13,8 +13,17 @@
     background-image: none;
 }
 
+GtkTreeView {
+    color: #00ff00;
+    backgorund-color: #0000ff;
+}
+
 GtkTreeView.cell.button {
     color: @theme_fg_color;
+}
+
+GtkTreeView.cell.button:hover {
+    color: @theme_selected_fg_color;
 }
 
 row:selected,
