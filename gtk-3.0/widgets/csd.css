@@ -88,6 +88,7 @@
 }
 
 .titlebar .button {
+    padding: 6px 6px;
     background-color: @toolbar_bg_color; /*makes it practically transparent*/
     color: @toolbar_fg_color;
 }
