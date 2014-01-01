@@ -45,7 +45,7 @@ GtkIconView.content-view.check:selected {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_base_color, 0.8);
-    border-radius: 2px;
+    border-radius: 0px;
     background-color:@theme_base_color;
     background-image: none;
     color: @theme_text_color;

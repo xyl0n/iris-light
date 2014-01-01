@@ -43,7 +43,7 @@
 }
 
 .dynamic-notebook .notebook tab .entry {
-    border-radius: 2px;
+    border-radius: 0px;
     padding: 4px 3px;
 }
 
@@ -186,30 +186,33 @@
 /**********************
  * secondary toolbars *
  **********************/
+ 
+/*Example is the Find toolbar in Scratch
+ 
 .secondary-toolbar.toolbar {
     padding: 2px;
-    border-color: shade(@toolbar_bg_color, 0.8);
+    border-color: shade(@toolbar_bg_color, 1.0);
     background-color: @toolbar_bg_color;
     background-image: none;
 }
 
 .secondary-toolbar.toolbar .button {
-    border-color: shade(@toolbar_bg_color, 0.8);
-    background-color: shade(@toolbar_bg_color, 1.08);
+    border-color: shade(@toolbar_bg_color, 1.0);
+    background-color: shade(@toolbar_bg_color, 1.0);
     background-image: none;
-    color: @toolbar_fg_color;
 }
 
 .secondary-toolbar.toolbar .button:hover {
-    border-color: shade(@toolbar_bg_color, 0.7);
-    background-color: shade(@toolbar_bg_color, 1.10);
+    border-color: shade(@toolbar_bg_color, 1.0);
+    background-color: shade(@toolbar_bg_color, 1.0);
     background-image: none;
 }
 
 .secondary-toolbar.toolbar .button:active {
-    border-color: shade(@toolbar_bg_color, 0.8);
+    border-color: shade(@toolbar_bg_color, 1.0);
     background-color: shade(@toolbar_bg_color, 0.95);
     background-image: none;
+    color: shade(@theme_selected_fg_color, 1.05);
 }
 
 .secondary-toolbar.toolbar .button:active:hover {
@@ -233,7 +236,7 @@
     border-color: shade(@toolbar_bg_color, 0.75);
     background-color: shade(@toolbar_bg_color, 0.80);
     background-image: none;
-}
+}*/
 
 /*******************
  * bottom toolbars *
@@ -417,7 +420,7 @@ GraniteWidgetsPopOver *.separator {
 
 .button.app {
     border-width: 0;
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: transparent;
     background-image: none;
 }
@@ -448,7 +451,7 @@ GraniteWidgetsPopOver *.separator {
 
 .gala-workspace-selected {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0px;
     border-color: shade(@theme_selected_fg_color, 0.9);
     background-color: @theme_selected_fg_color;
     background-image: none;
@@ -462,7 +465,7 @@ GraniteWidgetsPopOver *.separator {
     padding: 3px 6px;
     border-width: 1px;
     border-color: shade(@theme_base_color, 0.7);
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: @theme_base_color;
     background-image: none;
 }
@@ -535,7 +538,7 @@ BirdieWidgetsTweetList * {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_base_color, 0.7);
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: @theme_base_color;
     background-image: none;
     color: @theme_text_color;

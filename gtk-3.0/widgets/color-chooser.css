@@ -29,28 +29,28 @@ GtkColorSwatch.color-dark:selected:hover {
 
 GtkColorSwatch.left,
 GtkColorSwatch:first-child {
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 GtkColorSwatch.right,
 GtkColorSwatch:last-child {
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 GtkColorSwatch:only-child {
-    border-radius: 2px;
+    border-radius: 0px;
 }
 
 GtkColorSwatch.top {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 GtkColorSwatch.bottom {
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 GtkColorChooserWidget #add-color-button {
@@ -87,7 +87,7 @@ GtkColorChooserWidget #add-color-button:hover {
 }
 
 GtkColorEditor GtkColorSwatch {
-    border-radius: 2px;
+    border-radius: 0px;
 }
 
 GtkColorEditor GtkColorSwatch.color-dark:hover,

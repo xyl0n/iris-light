@@ -93,7 +93,7 @@
 .linked .button:insensitive:first-child {
     border-width: 1px;
     border-right-width: 0;
-    border-radius: 2px;
+    border-radius: 0px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -107,7 +107,7 @@
 .linked .button:focus:active:last-child,
 .linked .button:insensitive:last-child {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
@@ -121,7 +121,7 @@
 .linked .button:focus:active:only-child,
 .linked .button:insensitive:only-child {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0px;
 }
 
 /* middle button (vertical) */
@@ -147,7 +147,7 @@
 .linked.vertical .button:insensitive:first-child {
     border-width: 1px;
     border-bottom-width: 0;
-    border-radius: 2px;
+    border-radius: 0px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -161,7 +161,7 @@
 .linked.vertical .button:focus:active:last-child,
 .linked.vertical .button:insensitive:last-child {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
@@ -175,5 +175,5 @@
 .linked.vertical .button:focus:active:only-child,
 .linked.vertical .button:insensitive:only-child {
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0px;
 }
