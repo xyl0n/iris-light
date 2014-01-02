@@ -306,8 +306,8 @@ GucharmapChartable {
 GucharmapChartable:active,
 GucharmapChartable:focus,
 GucharmapChartable:selected {
-    background-color: @theme_selected_fg_color;
-    color: @theme_base_color;
+    background-color: @theme_bg_color;
+    color: @theme_selected_bg_color;
 }
 
 /*************
