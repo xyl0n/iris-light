@@ -186,3 +186,7 @@ GtkTreeMenu .menuitem {
 GtkModelMenuItem GtkBox GtkImage {
     padding-right: 4px;
 }
+
+.button .menu *{
+    font-weight: normal;
+}

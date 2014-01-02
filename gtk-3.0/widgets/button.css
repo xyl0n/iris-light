@@ -22,11 +22,10 @@
     transition: 150ms ease-in;
     background-color: shade(@button_bg_color, 1.17);
     background-image: none;
-    color: @theme_base_color;
 }
 
 .button:active {
-    background-color: shade(@button_bg_color, 0.9); /*also controls "on" state of toggle button*/
+    background-color: shade(@button_bg_color, 0.9);
     background-image: none;
     color: shade(mix(#ff0000, @theme_selected_fg_color, 0.75), 1.35);
 }
@@ -64,6 +63,24 @@
     border-color: shade(@theme_selected_fg_color, 0.7);
     background-color: shade(@theme_selected_fg_color, 0.97);
     color: shade(@theme_base_color, 0.9);
+}
+
+/*Fix for Evince*/
+
+EvSidebar GtkToggleButton.button { 
+    color: @theme_fg_color;
+    background-color: @theme_bg_color;
+}
+
+
+EvSidebar GtkToggleButton.button:hover {
+    color: shade(@theme_selected_fg_color, 1.15);
+    background-color: @theme_bg_color;
+}
+
+EvSidebar GtkToggleButton.button:active {
+    color: @theme_selected_fg_color;
+    background-color: @theme_bg_color;
 }
 
 /****************
