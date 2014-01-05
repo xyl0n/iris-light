@@ -49,9 +49,9 @@
 @define-color panel_fg_color #f2f2f2;
 
 /* osd */
-@define-color osd_base #222;
-@define-color osd_fg #fefefe;
-@define-color osd_bg #222;
+@define-color osd_base #fafafa;
+@define-color osd_fg #333333;
+@define-color osd_bg #fafafa;
 
 /* window manager colors */
 @define-color wm_bg @theme_bg_color;
@@ -97,3 +97,4 @@
 @import url("widgets/osd.css");
 @import url("widgets/csd.css");
 @import url("widgets/combobox.css");
+@import url("widgets/selection-mode.css");
