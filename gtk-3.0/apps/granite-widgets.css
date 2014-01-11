@@ -6,10 +6,22 @@
     background-image: none;
 }
 
-.dynamic-notebook GtkLabel,
+.dynamic-notebook GtkLabel {
+    color: alpha(@theme_fg_color, 0.5);
+}
+
 .dynamic-notebook GtkImage {
     color: alpha(@theme_fg_color, 0.5);
 }
+
+.dynamic-notebook GtkImage:hover {
+    color: shade(@theme_selected_fg_color, 1.15);
+}
+
+.dynamic-notebook GtkImage:active {
+    color: @theme_selected_fg_color;
+}
+
 
 .dynamic-notebook .notebook {
     -GtkNotebook-tab-overlap: 3px;
@@ -27,7 +39,7 @@
     border-radius: 0px;
     background-color: @theme_bg_color;
     background-image: none;
-    color: @theme_fg_color;
+    color: @theme_bg_color;
 }
 
 .dynamic-notebook .notebook tab:nth-child(first) {
@@ -39,7 +51,7 @@
     border-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 1.08);
     background-image: none;
-    color: @theme_fg_color;
+    color: @theme_bg_color;
 }
 
 .dynamic-notebook .notebook tab .entry {
@@ -52,10 +64,9 @@
 .dynamic-notebook .notebook .button,
 .dynamic-notebook .notebook .button:hover,
 .dynamic-notebook .notebook .button:hover:active {
-    border-color: shade(@theme_bg_color, 0.7);
-    background-color: shade(@theme_bg_color, 1.10);
+    border-color: transparent;
+    background-color: transparent;
     background-image: none;
-    color: #00ff00;
 }
 
 .dynamic-notebook .button:hover:active,
