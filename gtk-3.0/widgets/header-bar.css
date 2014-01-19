@@ -23,5 +23,5 @@
 
 .header-bar .subtitle {
 	font: 9;
-    color: @toolbar_bg_color;
+    color: @toolbar_fg_color;
 }

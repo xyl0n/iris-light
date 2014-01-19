@@ -54,13 +54,13 @@
 @define-color osd_bg #fafafa;
 
 /* window manager colors */
-@define-color wm_bg @theme_bg_color;
-@define-color wm_border_focused @theme_bg_color;
+@define-color wm_bg @menubar_bg_color;
+@define-color wm_border_focused @menubar_bg_color;
 @define-color wm_border_unfocused shade(@theme_bg_color, 0.92);
-@define-color wm_title_focused @theme_fg_color;
-@define-color wm_title_unfocused alpha(@theme_fg_color, 0.95);
+@define-color wm_title_focused @menubar_fg_color;
+@define-color wm_title_unfocused alpha(@menubar_fg_color, 0.95);
 @define-color wm_icons_focused @theme_fg_color;
-@define-color wm_icons_focused_prelight shade(@theme_selected_bg_color, 1.15);
+@define-color wm_icons_focused_prelight @theme_selected_bg_color;
 @define-color wm_icons_focused_pressed @theme_selected_bg_color;
 @define-color wm_icons_unfocused alpha(@theme_fg_color, 0.95);
 @define-color wm_icons_unfocused_prelight shade(@theme_selected_bg_color, 1.15);

@@ -363,3 +363,20 @@ UmEditableCombo .button:hover {
     color: @theme_fg_color;
     background-color: transparent;
 }
+
+/* Rhythmbox */
+
+#next-button *{
+color: #00f;
+background-color: #00ff00;
+}
+
+.next-button *{
+color: #00f;
+background-color: #00ff00;
+}
+
+next-button *{
+color: #00f;
+background-color: #00ff00;
+}
