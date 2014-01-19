@@ -5,9 +5,13 @@ style "entry"			= "default"
   GtkWidget::interior_focus	= 0
   base[NORMAL] = @base_color
   base[PRELIGHT] = @base_color
-  base[SELECTED] = "#d8d8d8"
+  base[SELECTED] = "#fafafa"
   base[ACTIVE] = "#e2e2e2"
   base[INSENSITIVE] = "#d6d6d6"
+  fg[NORMAL] = @bg_color
+  fg[PRELIGHT] = @selected_bg_color
+  fg[SELECTED] = @selected_bg_color
+
   engine "pixmap"
   {
     image
@@ -54,4 +58,3 @@ image
 class "GtkEntry"           		style "entry"
 class "GtkOldEditable" 			style "entry"
 class "GtkEditable" 			style "entry"
-
