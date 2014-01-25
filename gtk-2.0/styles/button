@@ -1,8 +1,11 @@
 style "button" 
 {
-	xthickness = 7
-	ythickness = 5
-
+	xthickness = 10
+	ythickness = 4
+	fg[NORMAL] = @text_color
+	fg[PRELIGHT] = @text_color
+	fg[ACTIVE] = @text_color
+	fg[INSENSITIVE] = mix (0.3, @base_color, @text_color)
   engine "pixmap"
   {
 		image
@@ -11,7 +14,7 @@ style "button"
 			recolorable		= TRUE
 			detail			= "buttondefault"
 			file			= "Buttons/button-default.png"
-			border			= { 5, 5, 5, 5}
+			border			= { 0, 0, 0, 0}
 			stretch			= TRUE
 		}
     image
@@ -21,7 +24,7 @@ style "button"
       recolorable		= TRUE
       shadow			= OUT
       file				= "Buttons/button-prelight.png"
-      border			= { 5, 5, 5, 5 }
+      border			= { 0, 0, 0, 0 }
       stretch			= TRUE
     }
     image
@@ -31,7 +34,7 @@ style "button"
       recolorable		= TRUE
       shadow			= IN
       file				= "Buttons/button-pressed.png"
-      border			= { 5, 5, 5, 5 }
+      border			= { 0, 0, 0, 0 }
       stretch			= TRUE
     }
     image
@@ -39,7 +42,7 @@ style "button"
       function			= BOX
       state				= ACTIVE
       file				= "Buttons/button-pressed.png"
-      border			= { 5, 5, 5, 5 }
+      border			= { 0, 0, 0, 0 }
       stretch			= TRUE
     }	
     image 
@@ -47,14 +50,14 @@ style "button"
      function			= BOX
      state				= INSENSITIVE
      file					= "Buttons/button-insensitive.png"
-     border			= { 5, 5, 5, 5 }
+     border			= { 0, 0, 0, 0 }
      stretch			= TRUE
     }
     image 
     {
       function			= BOX
       file				= "Buttons/button-normal.png"		
-      border			= { 5, 5, 5, 5 }
+      border			= { 0, 0, 0, 0 }
       stretch			= TRUE
      }	
   }
@@ -62,3 +65,4 @@ style "button"
 widget_class "*.<GtkButton>.*"		style "button"
 class "GtkButton"	style "button"
 widget_class "*GtkToggleButton*"   style "button"
+
