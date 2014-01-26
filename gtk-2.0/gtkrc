@@ -52,8 +52,8 @@ style "default"
   #GimpColorNotebook::tab-border 	        = 1
   #GimpDockSeparator::height     	        = 10
 
-  GtkVScale::slider_length 			= 16
-  GtkVScale::slider_width 			= 16
+  GtkVScale::slider_length 			= 14
+  GtkVScale::slider_width 			= 14
   #GtkVScale::focus-padding                      = 4
   #GtkVScale::trough-side-details                = 0
    #GtkVScale::trough-border                      = 1
@@ -65,8 +65,8 @@ style "default"
 
   #GtkHScale::trough-side-details                = 0
   #GtkHScale::focus-padding                      = 4
-  GtkHScale::slider_length 			= 16
-  GtkHScale::slider_width 			= 16
+  GtkHScale::slider_length 			= 14
+  GtkHScale::slider_width 			= 14
   #GtkHScale::trough-border                       = 1
   #GtkHScale::value-spacing                       = 0
   #GtkHScale::trough-under-steppers               = 0

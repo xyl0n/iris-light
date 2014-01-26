@@ -22,7 +22,7 @@ style "progressbar" {
 		lightborderstyle = 0 # 0 = lightborder on top side, 1 = lightborder on all sides
 		progressbarstyle = 0 # 0 = none, 1 = diagonal striped, 2 = vertical striped
 		reliefstyle = 0 # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
-		roundness = 5 # roundness of widgets
+		roundness = 0 # roundness of widgets
 		trough_border_shades = { 1.0, 1.0 }
   }
 }
