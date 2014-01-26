@@ -364,19 +364,27 @@ UmEditableCombo .button:hover {
     background-color: transparent;
 }
 
-/* Rhythmbox */
-
-#next-button *{
-color: #00f;
-background-color: #00ff00;
+/*GThumb*/
+GthToolbox .button,
+GthToolbox .button:focus {
+    color: @theme_text_color;
+    background-color: @theme_bg_color;
+    border-style: solid;
+    border-width: 1px;
+    border-color: alpha(@theme_fg_color, 0.25);
 }
 
-.next-button *{
-color: #00f;
-background-color: #00ff00;
+GthToolbox .button:hover {
+    background-color: @theme_bg_color;
+    color: @theme_selected_fg_color;
 }
 
-next-button *{
-color: #00f;
-background-color: #00ff00;
+GthToolbox .button:active {
+    background-color: @theme_bg_color;
+    color: shade(@theme_selected_fg_color, 0.87);
+}
+
+GthToolbox .button:active:hover {
+    background-color: @theme_bg_color;
+    color: shade(@theme_selected_fg_color, 1.15);
 }

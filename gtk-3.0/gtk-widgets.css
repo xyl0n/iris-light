@@ -420,7 +420,6 @@ GtkViewport.frame {
     background-color: @theme_base_color;
     color: @theme_text_color;
 }
-
 .view:insensitive,
 .view:insensitive:insensitive {
     background-color: shade(@theme_base_color, 0.9);
