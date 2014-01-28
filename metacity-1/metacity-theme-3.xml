@@ -15,8 +15,8 @@
 <constant name="C_titlebar_focused_hilight" value="gtk:custom(wm_highlight,gtk:base[NORMAL])" />
 <constant name="C_titlebar_unfocused" value="blend/gtk:base[NORMAL]/gtk:bg[NORMAL]/0.4" />
 <constant name="C_title_focused" value="gtk:custom(wm_title,gtk:fg[NORMAL])" />
-<constant name="C_title_focused_hilight" value="gtk:custom(wm_title_highlight,gtk:base[NORMAL])" />
-<constant name="C_title_focused_hilight_dark" value="gtk:custom(wm_title_highlight_dark,gtk:bg[NORMAL])" />
+<constant name="C_title_focused_hilight" value="gtk:custom(wm_title,gtk:fg[NORMAL])" />
+<constant name="C_title_focused_hilight_dark" value="gtk:custom(wm_title,gtk:fg[NORMAL])" />
 <constant name="C_title_unfocused" value="gtk:custom(wm_unfocused_title,gtk:fg[INSENSITIVE])" />
 <!-- color of the button icons -->
 <constant name="C_icons_focused" value="gtk:custom(wm_title,gtk:fg[NORMAL])" />
@@ -119,33 +119,15 @@
 	<!-- title -->
 
 <draw_ops name="title_focused">
-	<title version="< 3.1"
-               x="(0 `max` ((width - title_width) / 2))"
-               y="(0 `max` ((height - title_height) / 2)) + 2"
-               color="C_title_focused_hilight" />
-	<title version="< 3.1"
-               x="(0 `max` ((width - title_width) / 2))"
-               y="(0 `max` ((height - title_height) / 2))"
-               color="C_title_focused_hilight_dark" />
-	<title version="< 3.1"
+        <title version="< 3.1"
                x="(0 `max` ((width - title_width) / 2))"
                y="(0 `max` ((height - title_height) / 2)) + 1"
                color="C_title_focused" />
-	<title version=">= 3.1"
-               x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
-               y="(0 `max` ((height - title_height) / 2)) + 2"
-               ellipsize_width="width"
-               color="C_title_focused_hilight" />
-	<title version=">= 3.1"
-               x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
-               y="(0 `max` ((height - title_height) / 2))"
-               ellipsize_width="width"
-               color="C_title_focused_hilight_dark" />
-	<title version=">= 3.1"
+        <title version=">= 3.1"
                x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
                y="(0 `max` ((height - title_height) / 2)) + 1"
                ellipsize_width="width"
-               color="C_title_focused" />
+               color="C_title_focused_hilight_dark" />
 </draw_ops>
 
 <draw_ops name="title_unfocused">
@@ -376,7 +358,7 @@
 </draw_ops>
 
 <draw_ops name="close_focused">
-	<include name="close_shadow_focused" y="1" />
+	<!--<include name="close_shadow_focused" y="1" />-->
 	<include name="close_glyph_focused" />
 
 </draw_ops>
@@ -386,7 +368,7 @@
 </draw_ops>
 
 <draw_ops name="close_focused_prelight">
-	<include name="close_shadow_focused" y="1" />
+	<!--<include name="close_shadow_focused" y="1" />-->
 	<include name="close_glyph_prelight" />
 </draw_ops>
 
@@ -531,7 +513,7 @@
 </draw_ops>
 
 <draw_ops name="maximize_focused">
-	<include name="maximize_shadow_focused" y="1" />
+	<!--<include name="maximize_shadow_focused" y="1" />-->
 	<include name="maximize_glyph_focused" />
 </draw_ops>
 
@@ -540,7 +522,7 @@
 </draw_ops>
 
 <draw_ops name="maximize_focused_prelight">
-	<include name="maximize_shadow_focused" y="1" />
+	<!--<include name="maximize_shadow_focused" y="1" />-->
 	<include name="maximize_glyph_prelight" />
 </draw_ops>
 
@@ -618,7 +600,7 @@
 </draw_ops>
 
 <draw_ops name="minimize_focused">
-	<include name="minimize_shadow_focused" y="2" />
+	<!--<include name="minimize_shadow_focused" y="2" />-->
 	<include name="minimize_glyph_focused" />
 </draw_ops>
 
@@ -627,7 +609,7 @@
 </draw_ops>
 
 <draw_ops name="minimize_focused_prelight">
-	<include name="minimize_shadow_focused" y="1" />
+	<!--<include name="minimize_shadow_focused" y="1" />-->
 	<include name="minimize_glyph_prelight" />
 </draw_ops>
 
@@ -695,7 +677,7 @@
 </draw_ops>
 
 <draw_ops name="menu_focused">
-	<include name="menu_shadow_focused" y="1" />
+	<!--<include name="menu_shadow_focused" y="1" />-->
 	<include name="menu_glyph_focused" />
 </draw_ops>
 
@@ -791,7 +773,7 @@
 </draw_ops>
 
 <draw_ops name="shade_focused">
-	<include name="shade_shadow_focused" y="1" />
+	<!--<include name="shade_shadow_focused" y="1" />-->
 	<include name="shade_glyph_focused" />
 </draw_ops>
 
