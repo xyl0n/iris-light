@@ -25,7 +25,6 @@
 
 .dynamic-notebook .notebook {
     -GtkNotebook-tab-overlap: 3px;
-    -GtkNotebook-initial-gap: 12px;
 
     border-width: 1px 0 0 0;
     border-color: shade(@theme_bg_color, 0.8);
@@ -197,9 +196,9 @@
 /**********************
  * secondary toolbars *
  **********************/
- 
+
 /*Example is the Find toolbar in Scratch
- 
+
 .secondary-toolbar.toolbar {
     padding: 2px;
     border-color: shade(@toolbar_bg_color, 1.0);
@@ -584,7 +583,7 @@ BirdieWidgetsTweetList * {
 }
 
 .composited-indicator,
-.wingpanel-app-button, 
+.wingpanel-app-button,
 .wingpanel-indicator-button {
     padding: 0 2px;
     background-color: transparent;
