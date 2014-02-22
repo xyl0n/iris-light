@@ -12,6 +12,14 @@
 	padding: 6px 6px;
 }
 
+.header-bar .button {
+    background-color: @menubar_bg_color;
+}
+
+.header-bar .button:hover {
+    color: shade(@menu_selected_fg_color, 1.05);
+}
+
 .header-bar .button.image-button {
 	padding: 6px 6px;
 }
