@@ -141,12 +141,6 @@ style "menubar-item"
   ythickness			= 1
 }
 
-style "chrome_menu_item"
-{
-        bg[SELECTED] = @bg_color
-        xthickness			= 4
-        ythickness			= 4
-}
 
 widget_class "*<GtkSeparatorMenuItem>*" style "menuitem"
 class "GtkMenu"       			style "menu"
@@ -157,4 +151,3 @@ class "GtkTearoffMenuItem"		style "menuitem"
 class "GtkMenuBar*" 		     	style "menubar"
 widget_class "*<GtkMenuBar>*"		style "menubar"
 widget_class "*<GtkMenuBar>.<GtkMenuItem>*"	style "menubar-item"
-widget_class "*<GtkCustomMenu>*<GtkCustomMenuItem>*" style "chrome_menu_item"

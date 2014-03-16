@@ -508,7 +508,6 @@ style "default"
   }
 }
 
-
 class "GtkWidget" style "default"
 
 include"styles/tooltips"
