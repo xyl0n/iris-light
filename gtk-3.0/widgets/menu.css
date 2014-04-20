@@ -65,7 +65,15 @@ GtkComboBox .menu {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
-    color: @menubar_fg_color;
+    color: @theme_bg_color;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+}
+
+.menubar.menuitem *,
+.menubar .menuitem *,
+.menubar.menuitem:hover,
+.menubar .menuitem:hover {
+    text-shadow: none;
 }
 
 .menubar.menuitem:hover,
