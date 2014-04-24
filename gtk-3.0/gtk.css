@@ -71,7 +71,6 @@
 @import url("gtk-widgets-assets.css");
 @import url("apps/gnome-applications.css");
 @import url("apps/granite-widgets.css");
-@import url("apps/unity.css");
 @import url("apps/xfce.css");
 
 @import url("widgets/assistant.css");
@@ -93,6 +92,8 @@
 @import url("widgets/spinner.css");
 @import url("widgets/switch.css");
 @import url("widgets/color-chooser.css");
+
+@import url("apps/unity.css");
 @import url("widgets/toolbar.css");
 @import url("widgets/header-bar.css");
 @import url("widgets/osd.css");
