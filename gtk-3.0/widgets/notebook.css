@@ -81,7 +81,7 @@
 }
 
 .notebook tab .button {
-    background-color: @theme_bg_color;
+    background-color: transparent;
     color: @theme_fg_color;
 }
 
