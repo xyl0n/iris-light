@@ -5,15 +5,13 @@
     padding: 3px 8px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-right-width: 0;
+    border-right-width: transparent;
 }
 
 .spinbutton.button {
-    padding: 4px;
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    color: @theme_fg_color;
 }
 
 .spinbutton.button:active {
@@ -25,7 +23,7 @@
 }
 
 .spinbutton.button:hover {
-    transition: all 500ms linear;
+    transition: 500ms linear;
     border-style: none;
     border-radius: 0;
     color: @theme_selected_fg_color;
@@ -37,27 +35,22 @@
 }
 
 .spinbutton.button {
-    border-radius: 0;
-    border-style: solid;
     border-width: 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-radius: 0;
 }
 
 .spinbutton.button:first-child {
     border-radius: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-left-width: 1px;
-    border-left-color: shade(@theme_bg_color, 0.8);
-    border-style: solid;
 }
 
 .spinbutton.button:last-child {
     border-radius: 0;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    border-right-width: 1px;
-    border-right-color: shade(@theme_bg_color, 0.82);
-    border-style: solid;
 }
 
 .spinbutton.vertical .button:first-child {
