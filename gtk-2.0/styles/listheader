@@ -1,99 +1,41 @@
-style "list-header"
-{
-	fg[NORMAL] = @fg_color
-	fg[PRELIGHT] = @fg_color
-	fg[SELECTED] = @selected_bg_color
-	fg[ACTIVE] = @fg_color
-	fg[INSENSITIVE] = mix (0.5, @bg_color, @fg_color)
-	text[SELECTED] = @selected_bg_color
-	text[ACTIVE] = @selected_bg_color
-   #Comment out the ythickness setting below for thicker column headers.
- ythickness = 5
+style "treeview" {
+    fg[PRELIGHT] = @selected_bg_color
+    fg[SELECTED] = @selected_bg_color
+    fg[ACTIVE] = @selected_bg_color
+
+    bg[NORMAL]   = @bg_color
+    bg[SELECTED] = @bg_color
+    bg[PRELIGHT] = @bg_color
+    bg[SELECTED] = @bg_color
+
+    text[NORMAL  ] = @text_color
+    text[SELECTED] = @selected_bg_color
+    text[ACTIVE  ] = @selected_bg_color
+
+    base[SELECTED] = @bg_color
+    base[ACTIVE  ] = @bg_color
+
 	GtkTreeView::odd_row_color  = "#ffffff"
 	GtkTreeView::even_row_color = "#ffffff"
 	GtkTreeView::odd_col_color = "#ffffff"
 	GtkTreeView::even_col_color = "#ffffff"	
 
-   engine "pixmap" 
-	{
+    engine "murrine" {
+        cellstyle = 0
+        listviewstyle = 0
+        listviewheaderstyle = 0
+        progressbarstyle = 0
+        glazestyle = 0
 
-	#This image is used to draw the headers of columns in list views when they are
-	#not selected.
-    	image
-      		{
-        		function        	= BOX
-			recolorable    	= TRUE
-			state				= NORMAL
-			file            		= "ListHeaders/list_header.png"
-			border          	= { 1, 1, 1, 1 }
-			stretch         	= TRUE
-      		}
-
-	#This image is used to draw the column headers in list views when they are
-	#clicked.
-    	image
-      		{
-        		function        	= BOX
-			recolorable    	= TRUE
-			state				= PRELIGHT
-			file            		= "ListHeaders/list_header-prelight.png"
-			border          	= { 1, 1, 1, 1 }
-			stretch         	= TRUE
-      		}
-
-
-
-	image
-      		{
-        		function        	= BOX
-			recolorable    	= TRUE
-			state				= ACTIVE
-			file					= "ListHeaders/list_header-pressed.png"
-			border          	= { 1, 1, 1, 1 }
-			stretch         	= TRUE
-      		}
-	image
-      		{
-        		function        	= BOX
-			recolorable    	= TRUE
-			state				= SELECTED
-			file					= "ListHeaders/list_header-prelight.png"
-			border          	= { 1, 1, 1, 1 }
-			stretch         	= TRUE
-      		}
-	image
-      		{
-        		function        	= BOX
-			recolorable    	= TRUE
-			state				= INSENSITIVE
-			file					= "ListHeaders/list_header-insens.png"
-			border          	= { 1, 1, 1, 1 }
-			stretch         	= TRUE
-      	}
-	image
-	{
-		function 			= FLAT_BOX
-		state    			= NORMAL
-		border			= {2,2,2,2}
-                stretch         	= TRUE
-		file				= "Others/null.png"
-	}
-	image
-	{
-		function 			= FLAT_BOX
-		state    			= SELECTED
-		border			= {2,2,2,2}
-                stretch         	= TRUE
-		file				= "ListHeaders/tree.png"
-	}
-  	}
+        gradient_shades = {2.0,2.0,2.0,2.0}
+    }
 }
 
-widget_class "*List" style "list-header"
-widget_class "*GtkTree*" style "list-header"
-widget_class "*GtkCList*" style "list-header"
-widget_class "*GtkCTree*" style "list-header"
-widget_class "*GtkList*" style "list-header"
-widget_class "*.ETree.*" style "list-header"
-class "GtkTreeView" style "list-header"
+widget_class "*List" style "treeview"
+widget_class "*GtkTree*" style "treeview"
+widget_class "*GtkCList*" style "treeview"
+widget_class "*GtkCTree*" style "treeview"
+widget_class "*GtkList*" style "treeview"
+widget_class "*.ETree.*" style "treeview"
+class "GtkTreeView" style "treeview"
 
