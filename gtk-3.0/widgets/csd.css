@@ -21,6 +21,7 @@
  * when client-side decorations are in use and the application
  * did not set a custom titlebar.
  */
+ 
 .titlebar.default-decoration {
     border: none;
     box-shadow: none;
@@ -118,7 +119,7 @@
 
     this is used for the resize cursor area */
 
-    box-shadow: 0 2px 8px 3px alpha(@dark_shadow, 0.5);
+    box-shadow: 0 2px 3px alpha(@dark_shadow, 0.75);
 
     margin: 10px;
 }

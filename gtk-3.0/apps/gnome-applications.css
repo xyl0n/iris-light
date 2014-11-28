@@ -171,7 +171,6 @@ TerminalWindow GtkNotebook.notebook {
 
 TerminalWindow GtkNotebook.notebook tab GtkLabel {
     color: @theme_text_color;
-    padding-top: 2px;
 }
 
 TerminalWindow .scrollbars-junction,
