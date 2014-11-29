@@ -185,19 +185,19 @@ TerminalWindow .scrollbar.button:active:hover {
 }
 
 TerminalWindow .scrollbar.slider {
-    border-color: mix(shade(@theme_bg_color, 0.87), @theme_text_color, 0.21);
-    background-color: mix(@theme_bg_color, @theme_text_color, 0.21);
+    border-color: transparent;
+    background-color:  mix(@theme_bg_color, @theme_fg_color, 0.3);
 }
 
 TerminalWindow .scrollbar.slider:hover,
 TerminalWindow .scrollbar.slider.vertical:hover {
-    border-color: mix(shade(@theme_bg_color, 0.87), @theme_text_color, 0.31);
-    background-color: mix(@theme_bg_color, @theme_text_color, 0.31);
+    border-color: transparent;
+    background-color:  mix(@theme_bg_color, @theme_fg_color, 0.4);
 }
 
 TerminalWindow .scrollbar.slider:active,
 TerminalWindow .scrollbar.slider.vertical:active {
-    border-color: shade(@theme_selected_fg_color, 0.9);
+    border-color: transparent;
     background-color: @theme_selected_fg_color;
 }
 
@@ -391,4 +391,35 @@ GthToolbox .button:active {
 GthToolbox .button:active:hover {
     background-color: @theme_bg_color;
     color: shade(@theme_selected_fg_color, 1.15);
+}
+
+/****************
+ * File chooser *
+ ****************/
+
+GtkFileChooserWidget .action-bar {
+padding: 8px 6px;
+}
+ 
+GtkFileChooserWidget .path-bar .button {
+    background-color: @theme_bg_color;
+    border: 1px solid shade (@theme_bg_color, 0.8);
+    border-left: none;
+    color: @theme_fg_color;
+}
+
+GtkFileChooserWidget .path-bar .button:first-child {
+    border: 1px solid shade (@theme_bg_color, 0.8);
+}
+
+GtkFileChooserWidget .path-bar .button:hover {
+    background-color: @theme_base_color;
+    color: shade(@theme_selected_fg_color, 1.04);
+}
+
+GtkFileChooserWidget .path-bar .button:active,
+GtkFileChooserWidget .path-bar .button:active:hover,
+GtkFileChooserWidget .path-bar .button:checked {
+    background-color: shade(@theme_bg_color, 0.95);
+    color: @theme_text_color;
 }
