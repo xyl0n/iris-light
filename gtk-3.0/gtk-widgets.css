@@ -560,3 +560,10 @@ GtkBubbleWindow .toolbar {
     background-color: shade(@theme_selected_bg_color, 0.97); 
 }
 
+/************
+ * Calendar *
+ ************/
+
+GtkCalendar.button {
+   color: @theme_fg_color;
+}

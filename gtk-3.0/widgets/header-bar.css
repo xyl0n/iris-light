@@ -21,7 +21,8 @@
     color: shade(@menu_selected_fg_color, 1.05);
 }
 
-.header-bar .button:active {
+.header-bar .button:active,
+.header-bar .button:checked {
     color: shade(@menu_selected_fg_color, 1.0);
 }
 
