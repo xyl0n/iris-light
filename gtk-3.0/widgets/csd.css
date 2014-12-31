@@ -36,7 +36,7 @@
     background-color: @toolbar_bg_color;
     color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.4);
     text-shadow: none;
-}issues/86#issuecomment-65525978
+}
 
 .titlebar:backdrop:insensitive {
     background-image: none;
