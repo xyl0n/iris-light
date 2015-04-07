@@ -28,6 +28,10 @@
     border-color: shade(@theme_base_color, 0.75);
 }
 
+.notebook.header.top {
+    border-top: solid 1px shade(@theme_bg_color, 0.75);
+}
+
 .notebook.header.frame.top {
     border-width: 1px 1px 0 1px;
 }
