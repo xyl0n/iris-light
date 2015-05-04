@@ -113,43 +113,87 @@ EvSidebar GtkToggleButton.button:active {
 *****************/
 
 .button.flat,
-.toolbar .button.flat {
+.action-bar .button,
+.osd .button,
+.osd.button,
+NautilusProgressInfoWidget .button {
     border: none;
-    background-color: @theme_base_color;
+    background-color: transparent;
     background-image: none;
     color: @theme_fg_color;
 }
 
-.button.flat:hover {
+.button.flat:hover,
+.action-bar .button:hover,
+NautilusProgressInfoWidget .button:hover {
     transition: color 150ms ease-in;
     border: none;
     color: shade(@theme_selected_fg_color, 1.15);
 }
 
+.toolbar .button.flat,
+.toolbar .button.flat:focus {
+    transition: all 150ms linear;
+    border: solid 1px @toolbar_bg_color;
+    background-color: @toolbar_bg_color;
+}
+
 .toolbar .button.flat:hover {
-    background-color: @toolbar_bg_color; 
+    transition: all 150ms linear;
+    background-color: shade(@toolbar_bg_color, 0.96);
+    border: solid 1px @toolbar_bg_color;
+    box-shadow: inset 1px 1px shade(@toolbar_bg_color, 0.76),
+                inset -1px -1px shade(@toolbar_bg_color, 0.76);
+    color: @theme_text_color;
 }
 
 .button.flat:active,
 .button.flat:active:focus,
+.button.flat:prelight:focus,
 .button.flat:active:checked,
 .button.flat:active:checked:focus,
-.toolbar .button.flat:active,
-.toolbar .button.flat:active:focus,
-.toolbar .button.flat:checked {
+.button.flat:prelight:checked:focus,
+.action-bar .button:active,
+.action-bar .button:active:focus,
+.action-bar .button:checked,
+.action-bar .button:checked:focus,
+NautilusProgressInfoWidget .button:active,
+NautilusProgressInfoWidget .button:active:focus,
+NautilusProgressInfoWidget .button:checked
+NautilusProgressInfoWidget .button:checked:focus {
+    transition: color 150ms ease-in;
     border: none;
     color: shade(@theme_selected_fg_color, 0.97);
-    background-color: @theme_base_color;
+    background-color: transparent;
 }
 
 .button.flat:active:hover,
-.toolbar .button.flat:active:hover {
+.action-bar .button:active:hover,
+NautilusProgressInfoWidget .button:active:hover {
+    transition: color 150ms ease-in;
     border: none;
     color: shade (@theme_selected_fg_color, 1.15);
 }
 
+.toolbar .button.flat:active,
+.toolbar .button.flat:active:focus,
+.toolbar .button.flat:active:prelight,
+.toolbar .button.flat:checked,
+.toolbar .button.flat:active:checked:focus,
+.toolbar .button.flat:active:hover {
+    transition: all 150ms linear;
+    border: solid 1px @toolbar_bg_color;
+    box-shadow: inset 1px 1px shade(@toolbar_bg_color, 0.76),
+                inset -1px -1px shade(@toolbar_bg_color, 0.76);
+    background-color: shade(@toolbar_bg_color, 0.92);
+    color: @theme_text_color;
+}
+
 .button.flat:insensitive,
-.toolbar .button.flat:insensitive {
+.toolbar .button.flat:insensitive,
+.action-bar .button:insensitive,
+NautilusProgressInfoWidget .button:insensitive {
+    transition: color 150ms ease-in;
     border: none;
     color: shade (@theme_bg_color, 0.5);
 }
