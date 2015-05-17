@@ -21,10 +21,10 @@ style "menuitem"
 {
  xthickness				= 0
  ythickness            			= 4
-	fg[PRELIGHT] = @selected_bg_color
-	fg[SELECTED] = @selected_bg_color
-	text[SELECTED] = @selected_bg_color
-	text[PRELIGHT]	= @selected_bg_color
+	fg[PRELIGHT] = @selected_fg_color
+	fg[SELECTED] = @selected_fg_color
+	text[SELECTED] = @selected_fg_color
+	text[PRELIGHT]	= @selected_fg_color
    engine "pixmap"
   {
     image
