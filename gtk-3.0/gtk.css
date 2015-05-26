@@ -38,7 +38,7 @@
 @define-color light_grey #dedede;
 
 /* widget colors */
-@define-color button_bg_color #464646;
+@define-color button_bg_color #a0a0a0;
 @define-color menubar_bg_color @theme_bg_color;
 @define-color menubar_fg_color @theme_text_color;
 @define-color toolbar_bg_color @theme_bg_color;

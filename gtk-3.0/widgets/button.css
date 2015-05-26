@@ -39,7 +39,7 @@ BackgroundBox .button:active {
     border-radius: 0;
     background-color: @button_bg_color;
     background-image: none;
-    color: @theme_base_color;
+    color: @theme_text_color;
 }
 
 .button:hover {
